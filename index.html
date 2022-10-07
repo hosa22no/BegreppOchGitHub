@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub och Begrepp</title>
+</head>
+<body>
+    <h1>GitHub och begrepp</h1>
+   <h1>Github flow</h1>
+   <h3>Vad är det? Hur använder man det? Vilka viktiga delar är inkluderade i begreppet?</h3>
+   <p>Git Hub flow är ett arbetsflöde som kan användas för att göra sina egna projekt och samarbeta i projekt.
+    Flödet följer olika steg. Först skapar man ett Repository. När den är nedklonad till tex Visual studio Code så skapar man
+    en branch via Terminal för att kunna göra nya filer och förändringar i dem utan att man ändrar något i huvudbranchen Main. För att göra en branchskriver man 
+    git checkout -b och ett valfritt namn på branchen. Genom att jobba i sin egen branch kan man låta sina samarbetspartners
+    kontrollera vad man jobbat med.</p>
+
+    <p>När man gjort ändringar i filen/filerna man jobbat med lägger man till dem med git add, sedan skriver man ett meddelande
+    om vad för ändring man gjort, standarden är att skriva på engelska. Detta görs genom att skriva git commit -m "meddelande".
+    Slutligen pushar man upp filerna till GitHub genom att skriva git push -u origin "namnetpåbranchen".</p>
+
+    <p>För att få feedback på sina förändringar eller nya dokument kan man göra en pull request. Då ska amn sammanfata vad man
+    gjort för förändringar och beskriva vad man gjort för att lösa problemet. Kanske har man haft en issue man skulle lösa och 
+    då kan man länka till den så den som reviewar pull requesten kan se det. 
+    När den som gjort en review på pull requesten har godkänt ändringen kan man mergea pull requesten. Då kommer det man
+    gjort i sin egna branch mergeas in och bli en del av huvudbranchen. När det är gjort är det standard att radera sin egna branch, dels
+    för att markera att man arbetat färdigt med branchen och dels underlätta för andra så ingen av misstag råkar gå in och arbeta i den.</p>
+
+   <a href ="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub-flow</a>
+
+    <h1>Flexbox</h1> 
+    <h3> Vad är det? Hur fungerar det?</h3>
+    <p>Flexbox är en layout-metod som används för att förenkla designen och placeringen av olika element. Det går att göra en responsiv layout 
+        och man behöver inte använda float eller positionering på samma sätt som innan flexbox fanns.
+        Men FLexbox kan man lätt styra precis var på webbsidan man vill placera elementen. Det gör man genom att ha en "parent"-container och i den lägger man
+        "child-items" som man justerar med olika kommandon.
+    </p>
+    <a href="https://www.w3schools.com/csS/css3_flexbox.asp">Flexbox</a>
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>
+    
+    <h1>DOM (Document Object Model)</h1>
+    <h3>Vad är det? Hur manipulerar man DOM?</h3>
+    <p>DOM är en API som används för att ändra innehåll, styla och förändra strukturen på ett webbdokument.</p>
+    <p>JavaScript används för att manipulera DOM. Koden skrivs i JavaScript och då används DOM som ett redskap för att komma åt HTML-dokumentet och
+        dess element. Med JavaScript kan både elementen och attributen i HTML-dokumentet förändras, tas bort, eller nya skapas 
+        och läggas till i dokumentet.  Det kan också användas för att ändra CSS-stylingen. Genom DOM kan JavaScript också
+        göra att något händer på sidan, tex om man klickar på en knapp så utförs något i koden.
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">DOM</a>
+    <a href="https://www.w3schools.com/js/js_htmldom.asp">DOM W3C</a>
+
+    <h1>Fin kod</h1>
+    <h6>Vad menas med det begreppet? Varför är det viktigt?</h6>
+    <p> Genom att skriva kod "snyggt" och enligt standard är den mer lättläst, det är lättare för andra att förstå den
+        och den blir mer lika även när det är olika personer som skrivit den. Det är enklare att hitta och åtgärda eventuella
+        fel i koden och att kunna återanvända koden. För att skriva fin kod så ska utvecklaren namnge sina variabler med tydliga, beskrivande namn
+        och använda camelCase när det är brukligt. Man ska använda intendering på ett korrekt sätt då det underlättar att få överblick
+        över koden.
+
+
+    </p>
+    <a href="https://www.geeksforgeeks.org/coding-standards-and-guidelines/">Om kod-standard</a>
+    
+    <h1>Ramverk</h1>
+    <h6>Inom webbutveckling använder man begreppet ramverk, vad är det? Beskriv vad det är och berätta lite mer om två valfria.</h6>
+    <p>För att underlätta arbetet för Webbutvecklare kan olika ramverk användas. De används för att förbättra funktionen och effektivisera
+        arbetet för utvecklaren. Det ska användas när det behövs då ramverk kan vara stora filer som gör sidan långsammare och ramverk
+    kan också göra att det blir mer svårjobbat och komplext att jobba med.  </p>
+
+<a href="https://redonion.se/vad-ar-ramverk/">Ramverk</a>
+    <a href="https://evolve.ie/q-and-a/what-is-a-web-framework/">Ramverk</a>"
+    <p>Bootstrap är ett CSS- ramverk som används vid utveckling av responsiva webbsidor och webbaplikationer som gör att de fungerar med alla 
+    olika skärmstorlekar. Det är det mest populära open-source-verktyget för HTML, CSS och JavaScript.</p>
+ <a href="https://www.w3schools.com/whatis/whatis_bootstrap.asp">Bootstrap</a>
+ <a href= "https://www.geeksforgeeks.org/bootstrap/">Bootstrap</a>
+
+<p>AngularJS är ett JavaScript-ramverk som skrivs i JavaScript. Google utvecklar det och det är Open Source-kod. Det byggs med "Single Page Application" vilket gör webbsidan snabbare då den 
+ bara behöver laddas ner en gång. Med Angular kan man göra webbsidor mer dynamiska genom att lägga till
+    interaktiva effekter. Genom olika direktiv kan man via Angular lägga till nya attribut på HTML-element.
+    Då det är baserat på Javascript så skrivs koden i ett JavaScript dokument och länkas till med en script-tagg.
+</p>
+<a href="https://sv.classicfoxvalley.com/collate/difference-between-javascript-and-angularjs-0aa03f/#:~:text=AngularJS%20%C3%A4r%20den%20f%C3%B6redragna%20JavaScript-plattformen%20f%C3%B6r%20att%20skapa,enkelhet%20och%20effektivitet.%20Uttryck%20av%20JavaScript%20och%20AngularJS">AngularJS</a>
+<a href="https://www.w3schools.com/angular/">Angular</a>
+<p>
+ 
+    
+    
+</body>
+</html>
